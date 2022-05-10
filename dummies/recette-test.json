@@ -1,0 +1,7 @@
+{
+    "titre": "recette Test",
+    "temps_de_preparation": "10",
+    "temps_de_cuisson": "20",
+    "description": "une description test",
+    "contenu": "différentes instructions"
+}
