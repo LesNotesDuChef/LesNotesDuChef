@@ -1,7 +1,9 @@
 import HomePage from "./pages/home-page";
 
-export default function App() {
+const App = () => {
   return(
     <HomePage></HomePage>
   );
 }
+
+export default App;
