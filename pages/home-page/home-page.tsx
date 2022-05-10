@@ -1,6 +1,6 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import HomePageTile from './home-page-tile';
-import customData from '../dummies/recette-test.json'
+import customData from '../../dummies/recette-test.json'
 
 
 const HomePage = () => {
