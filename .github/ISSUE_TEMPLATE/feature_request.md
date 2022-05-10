@@ -1,20 +1,21 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
+name: Nouvelle Fonctionnalité
+about: Une Nouvelle Fonctionnalité Pour ce Projet
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## Description de la Solution
+Une decriprion claire et concise de la nouvelle fonctionnalité
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## Critères d'acceptation
+Les critères qui permettront de valider le code de cette nouvelle fonctionnalité 
+1.
+2.
+3.
+4.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## Contexte Additionnel
+Guidez le développeur avec des screenshot, une description, des dessins, un bisou
