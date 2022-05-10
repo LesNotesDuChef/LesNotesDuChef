@@ -1,26 +1,31 @@
-import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, TabBarIOSItem, Text, View } from 'react-native';
 import HomePageTile from './home-page-tile';
+import customData from '../dummies/recette-test.json'
+
+const data = customData.map( e => <HomePageTile titre={e.titre} description={e.description}></HomePageTile> );
 
 export default function HomePage() {
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
-          <HomePageTile></HomePageTile>
-          <HomePageTile></HomePageTile>
-          <HomePageTile></HomePageTile>
-          <HomePageTile></HomePageTile>
-          <HomePageTile></HomePageTile>
-      </ScrollView>
-    </SafeAreaView>
+    <View style={styles.container}>
+        <Text style={styles.title}>Les Notes Du Chef</Text>
+        <ScrollView style={styles.scrollView}>
+            {data}
+        </ScrollView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 50,
-  },
-  scrollView: {
-    marginHorizontal: 10,
-  },
+    container: {
+        flex: 1,
+    },
+    title: {
+        paddingLeft: 10,
+        paddingTop: 10,
+        paddingBottom: 10,
+        fontSize: 28,
+    },
+    scrollView: {
+        marginHorizontal: 5,
+    },
 });

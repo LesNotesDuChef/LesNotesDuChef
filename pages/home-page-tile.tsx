@@ -1,23 +1,19 @@
 import { SafeAreaView, StyleSheet, Text, TouchableOpacity } from "react-native";
 
-export default function HomePageTile() {
+const HomePageTile = (props: any) => {
     return(
         <TouchableOpacity style={styles.container}>
             <Text style={styles.title}>
-                Title
+                {props.titre}
             </Text>
             <Text style={styles.text}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                {props.description}
             </Text>
         </TouchableOpacity>
     );
 }
+
+export default HomePageTile;
 
 const styles = StyleSheet.create({
     container: {
