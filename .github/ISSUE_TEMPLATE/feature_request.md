@@ -1,8 +1,8 @@
 ---
 name: Nouvelle Fonctionnalité
 about: Une Nouvelle Fonctionnalité Pour ce Projet
-title: ''
-labels: ''
+title: '[User Story]'
+labels: 'Nouvelle fonctionnalité'
 assignees: ''
 
 ---
