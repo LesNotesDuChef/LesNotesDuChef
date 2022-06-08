@@ -1,8 +1,15 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import HomePageTile from './home-page-tile';
+import HomePageTile from './HomePageTile';
 import customData from '../../dummies/recette-test.json'
 
-
+/**
+ * Composant de la home page
+ * 
+ * @returns une vue sur la home page
+ * 
+ * @author Tanguy Poinson
+ * 
+ */
 const HomePage = () => {
     const data = customData.map( e => <HomePageTile titre={e.titre} description={e.description}></HomePageTile> );
     
@@ -16,6 +23,9 @@ const HomePage = () => {
     );
 }
 
+/**
+ * CSS de la home page
+ */
 const styles = StyleSheet.create({
     container: {
         flex: 1,
